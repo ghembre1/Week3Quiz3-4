@@ -27,7 +27,7 @@ function starImages(rating) {
       /*Part 4 */
       let imageText = "";
     for (let i = 1; i <= rating; i++) {
-            /*Part 4C */
+      /*Part 4C */
         imageText += "<img src='star.png' alt='star'>";
     }
     /*Part 4D */
@@ -38,9 +38,9 @@ for (let i = 0; i < reviewers.length; i++) {
       /*Part 6A */
       let reviewCode = "";
       /*Part 6B */
-      if (reviewType[i] === "P") {
+      if (reviewType[i] == "P") {
             reviewCode += "<table class='prime'>";
-        } else if (reviewType[i] === "N") {
+        } else if (reviewType[i] == "N") {
             reviewCode += "<table class='new'>";
         } else {
             reviewCode += "<table>";
@@ -51,3 +51,4 @@ for (let i = 0; i < reviewers.length; i++) {
         reviewCode += "<tr><th>Date</th><td>" + reviewDates[i] + "</td></tr>";
         reviewCode += "<tr><th>Rating</th><td>" + starImages(ratings[i]) + "</td></tr>";
         reviewCode += "<tr><th>Review</th><td>" + reviews[i] + "</td></tr>";
+}
